@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hours to Minutes | Isha Gandhi</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .card{
+            max-width: 500px;
+            height: auto;
+        }
+
+        h2{
+            text-underline-offset: 5px;
+        }
+
+        .ltr-space{
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center">
+
+    <div class="card bg-dark rounded-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-white text-center text-capitalize text-decoration-underline">Hours to Minute Converter</h2>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <form action="#" method="post">
+                        <div class="fields">
+                            <div class="field_input text-start">
+                                <label for="inputHour" class="text-white-50 fs-5 my-2">Enter Hours</label>
+                                <input type="text" id="inputHour" class="form-control py-2">
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-info mt-4 px-5 py-2 fs-5" type="submit" id="getMinutes">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <p class="text-white fs-3 fw-bold ltr-space mt-3" id="result">Result will go here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
